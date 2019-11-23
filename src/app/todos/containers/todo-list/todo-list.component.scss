@@ -1,0 +1,14 @@
+@import '../../../../variables.scss';
+
+.todo-list-container {
+  background-color: $white;
+  max-height: 300px;
+}
+
+.footer {
+  color: $dark-purple;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}

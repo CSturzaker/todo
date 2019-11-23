@@ -1,0 +1,17 @@
+<div class="todo">
+  <mat-checkbox
+    class="todo-done"
+    [checked]="todo.done"
+    (change)="toggleTodo(todo)"
+  ></mat-checkbox>
+  <span
+    class="todo-label"
+    [ngClass]="{ 'todo-label-done': todo.done }"
+    (click)="toggleTodo(todo)"
+  >
+    {{ todo.name }}
+  </span>
+  <button mat-icon-button (click)="removeTodo(todo)" aria-label="Delete">
+    <mat-icon>delete</mat-icon>
+  </button>
+</div>
