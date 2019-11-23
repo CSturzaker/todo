@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core'
 import { CommonModule } from '@angular/common'
+import { StoreModule } from '@ngrx/store'
 
 import { MaterialModule } from '../material/material.module'
 import { TodosRoutingModule } from './todos-routing.module'
+
+import * as fromTodos from './reducers'
 
 import { TodosPageComponent } from './containers/todos-page/todos-page.component'
 import { SidebarComponent } from './containers/sidebar/sidebar.component'
@@ -20,6 +23,11 @@ import { TodoListComponent } from './containers/todo-list/todo-list.component'
     TodoHeaderComponent,
     TodoListComponent,
   ],
-  imports: [CommonModule, MaterialModule, TodosRoutingModule],
+  imports: [
+    CommonModule,
+    MaterialModule,
+    TodosRoutingModule,
+    StoreModule.forFeature(fromTodos.todoFeatureKey, fromTodos.reducers),
+  ],
 })
 export class TodosModule {}
