@@ -1,10 +1,15 @@
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
-
-import { AppRoutingModule } from './app-routing.module'
-import { AppComponent } from './app.component'
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { StoreModule } from '@ngrx/store'
+
+// modules
+import { AppRoutingModule } from './app-routing.module'
+import { AuthModule } from './auth/auth.module'
+import { MaterialModule } from './material/material.module'
+// components
+import { AppComponent } from './app.component'
+
 import { reducers, metaReducers } from './reducers'
 
 @NgModule({
@@ -12,7 +17,9 @@ import { reducers, metaReducers } from './reducers'
   imports: [
     BrowserModule,
     AppRoutingModule,
+    AuthModule,
     BrowserAnimationsModule,
+    MaterialModule,
     StoreModule.forRoot(reducers, {
       metaReducers,
       runtimeChecks: {
