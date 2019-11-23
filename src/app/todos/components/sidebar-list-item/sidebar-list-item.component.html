@@ -1,1 +1,6 @@
-<p>sidebar-list-item works!</p>
+<div class="item-container" [ngClass]="{ selected: true }">
+  <mat-icon aria-hidden="false" aria-label="Example home icon">{{
+    item.icon
+  }}</mat-icon>
+  {{ item.label }}
+</div>

@@ -1,0 +1,17 @@
+@import '../../../../variables.scss';
+.item-container {
+  display: flex;
+  flex-direction: row;
+  font-weight: 400;
+  align-items: center;
+  padding: 15px;
+  mat-icon {
+    color: $grey;
+    margin-right: 10px;
+  }
+  &.selected,
+  &:hover {
+    cursor: pointer;
+    background-color: $purple;
+  }
+}
