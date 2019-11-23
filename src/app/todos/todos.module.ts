@@ -8,6 +8,8 @@ import { TodosPageComponent } from './containers/todos-page/todos-page.component
 import { SidebarComponent } from './containers/sidebar/sidebar.component'
 import { SidebarHeaderComponent } from './components/sidebar-header/sidebar-header.component'
 import { SidebarListItemComponent } from './components/sidebar-list-item/sidebar-list-item.component'
+import { TodoHeaderComponent } from './components/todo-header/todo-header.component'
+import { TodoListComponent } from './containers/todo-list/todo-list.component'
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { SidebarListItemComponent } from './components/sidebar-list-item/sidebar
     SidebarComponent,
     SidebarHeaderComponent,
     SidebarListItemComponent,
+    TodoHeaderComponent,
+    TodoListComponent,
   ],
   imports: [CommonModule, MaterialModule, TodosRoutingModule],
 })
