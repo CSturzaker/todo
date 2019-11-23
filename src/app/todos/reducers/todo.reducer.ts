@@ -38,13 +38,13 @@ export const reducer = createReducer(
   })),
   on(TodoActions.toggleTodo, (state, todo) => ({
     ...state,
-    items: state.todoItems.map((item: Todo) =>
+    todoItems: state.todoItems.map((item: Todo) =>
       item.id === todo.id ? { ...item, done: !item.done } : item
     ),
   })),
   on(TodoActions.removeTodo, (state, todo) => ({
     ...state,
-    items: state.todoItems.filter((item: Todo) => item.id !== todo.id),
+    todoItems: state.todoItems.filter((item: Todo) => item.id !== todo.id),
   }))
 )
 
