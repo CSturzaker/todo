@@ -1,12 +1,37 @@
 import { TestBed } from '@angular/core/testing'
+import { Store, MemoizedSelector } from '@ngrx/store'
+import { cold } from 'jasmine-marbles'
+import { AuthGuard } from './auth-guard.service'
+import * as fromAuth from '../reducers'
+import { provideMockStore, MockStore } from '@ngrx/store/testing'
 
-import { AuthGuardService } from './auth-guard.service'
+describe('Auth Guard', () => {
+  let guard: AuthGuard
+  let store: MockStore<fromAuth.State>
+  let loggedIn: MemoizedSelector<fromAuth.State, boolean>
 
-describe('AuthGuardService', () => {
-  beforeEach(() => TestBed.configureTestingModule({}))
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      providers: [AuthGuard, provideMockStore()],
+    })
 
-  it('should be created', () => {
-    const service: AuthGuardService = TestBed.get(AuthGuardService)
-    expect(service).toBeTruthy()
+    store = TestBed.get(Store)
+    guard = TestBed.get(AuthGuard)
+
+    loggedIn = store.overrideSelector(fromAuth.selectLoggedIn, false)
+  })
+
+  it('should return false if the user state is not logged in', () => {
+    const expected = cold('(a|)', { a: false })
+
+    expect(guard.canActivate()).toBeObservable(expected)
+  })
+
+  it('should return true if the user state is logged in', () => {
+    const expected = cold('(a|)', { a: true })
+
+    loggedIn.setResult(true)
+
+    expect(guard.canActivate()).toBeObservable(expected)
   })
 })
