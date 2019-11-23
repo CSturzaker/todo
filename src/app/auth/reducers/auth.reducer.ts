@@ -20,3 +20,4 @@ export const reducer = createReducer(
 )
 
 export const getUser = (state: State) => state.user
+export const getUsername = (state: State) => state.user.name

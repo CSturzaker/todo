@@ -52,3 +52,7 @@ export const selectLoginPagePending = createSelector(
   selectLoginPageState,
   fromLoginPage.getPending
 )
+export const selectUserName = createSelector(
+  selectAuthStatusState,
+  fromAuth.getUsername
+)
