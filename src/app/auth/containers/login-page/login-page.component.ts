@@ -1,5 +1,10 @@
 import { Component } from '@angular/core'
+import { Store, select } from '@ngrx/store'
 import { Observable } from 'rxjs'
+
+import { LoginActions } from '../../actions'
+
+import * as fromAuth from '../../reducers'
 
 import { Credentials } from '../../models'
 
@@ -9,9 +14,15 @@ import { Credentials } from '../../models'
   styleUrls: ['./login-page.component.scss'],
 })
 export class LoginPageComponent {
-  error$: Observable<any>
-  pending$: Observable<boolean>
-  constructor() {}
+  error$: Observable<string> = this.store.pipe(
+    select(fromAuth.selectLoginPageError)
+  )
+  pending$: Observable<boolean> = this.store.pipe(
+    select(fromAuth.selectLoginPagePending)
+  )
+  constructor(private store: Store<fromAuth.State>) {}
 
-  onSubmit(credentials: Credentials) {}
+  onSubmit(credentials: Credentials) {
+    this.store.dispatch(LoginActions.login({ credentials }))
+  }
 }
