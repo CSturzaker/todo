@@ -1,8 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LoginPageComponent should create 1`] = `
-<todo-login-page>
-  <todo-login-form>
+<todo-login-page
+  error$={[Function Store]}
+  pending$={[Function Store]}
+  store={[Function MockStore]}
+>
+  <todo-login-form
+    ng-reflect-pending="false"
+  >
     <mat-card
       class="mat-card _mat-animation-noopable"
     >
