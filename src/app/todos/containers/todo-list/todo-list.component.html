@@ -1,1 +1,14 @@
-<p>todo-list works!</p>
+<div class="todo-list-container">
+  <todo-todo-item
+    *ngFor="let todo of todoItems$ | async"
+    [todo]="todo"
+    (toggleTodoEvent)="toggleTodo(todo)"
+    (removeTodoEvent)="removeTodo(todo)"
+  ></todo-todo-item>
+</div>
+<div class="footer">
+  <button mat-icon-button aria-label="Add a to-do">
+    <mat-icon>add_circle</mat-icon>
+  </button>
+  Add a to-do
+</div>
