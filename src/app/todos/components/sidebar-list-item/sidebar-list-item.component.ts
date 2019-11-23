@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, OnInit, Input } from '@angular/core'
+
+import { ListItem } from '../../models'
 
 @Component({
   selector: 'todo-sidebar-list-item',
@@ -6,6 +8,9 @@ import { Component, OnInit } from '@angular/core'
   styleUrls: ['./sidebar-list-item.component.scss'],
 })
 export class SidebarListItemComponent implements OnInit {
+  @Input()
+  item: ListItem
+
   constructor() {}
 
   ngOnInit() {}
