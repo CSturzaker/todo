@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, OnInit, Input } from '@angular/core'
 
 @Component({
   selector: 'todo-sidebar-header',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core'
   styleUrls: ['./sidebar-header.component.scss'],
 })
 export class SidebarHeaderComponent implements OnInit {
+  @Input()
+  userName: string
   constructor() {}
 
   ngOnInit() {}
