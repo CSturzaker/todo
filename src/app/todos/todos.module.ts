@@ -13,6 +13,7 @@ import { SidebarHeaderComponent } from './components/sidebar-header/sidebar-head
 import { SidebarListItemComponent } from './components/sidebar-list-item/sidebar-list-item.component'
 import { TodoHeaderComponent } from './components/todo-header/todo-header.component'
 import { TodoListComponent } from './containers/todo-list/todo-list.component'
+import { TodoItemComponent } from './components/todo-item/todo-item.component'
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { TodoListComponent } from './containers/todo-list/todo-list.component'
     SidebarListItemComponent,
     TodoHeaderComponent,
     TodoListComponent,
+    TodoItemComponent,
   ],
   imports: [
     CommonModule,
