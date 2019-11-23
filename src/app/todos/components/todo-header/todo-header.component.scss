@@ -1,0 +1,13 @@
+@import '../../../../variables.scss';
+
+.header-container {
+  width: 100%;
+  background-color: $dark-purple;
+  padding: 70px 0 30px 30px;
+  color: $white;
+  p {
+    margin-bottom: 10px;
+    font-size: 45px;
+    font-weight: 300;
+  }
+}
