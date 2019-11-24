@@ -14,6 +14,8 @@ import { SidebarListItemComponent } from './components/sidebar-list-item/sidebar
 import { TodoHeaderComponent } from './components/todo-header/todo-header.component'
 import { TodoListComponent } from './containers/todo-list/todo-list.component'
 import { TodoItemComponent } from './components/todo-item/todo-item.component'
+import { TodoDialogComponent } from './containers/todo-list/todo-dialog'
+import { FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -24,12 +26,15 @@ import { TodoItemComponent } from './components/todo-item/todo-item.component'
     TodoHeaderComponent,
     TodoListComponent,
     TodoItemComponent,
+    TodoDialogComponent,
   ],
   imports: [
     CommonModule,
     MaterialModule,
     TodosRoutingModule,
+    FormsModule,
     StoreModule.forFeature(fromTodos.todoFeatureKey, fromTodos.reducers),
   ],
+  entryComponents: [TodoDialogComponent],
 })
 export class TodosModule {}

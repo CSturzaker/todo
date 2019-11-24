@@ -10,6 +10,7 @@ import {
   MatSidenavModule,
   MatListModule,
   MatIconModule,
+  MatDialogModule,
 } from '@angular/material'
 
 @NgModule({
@@ -20,6 +21,7 @@ import {
     MatInputModule,
     MatCheckboxModule,
     MatCardModule,
+    MatDialogModule,
     MatButtonModule,
     MatSidenavModule,
     MatListModule,
@@ -31,6 +33,7 @@ import {
     MatInputModule,
     MatCheckboxModule,
     MatCardModule,
+    MatDialogModule,
     MatButtonModule,
     MatSidenavModule,
     MatListModule,
