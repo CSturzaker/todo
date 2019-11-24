@@ -1,0 +1,413 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoListComponent should create 1`] = `
+<todo-todo-list
+  dialog={[Function Object]}
+  newTodo=""
+  store={[Function MockStore]}
+  todoItems$={[Function Store]}
+>
+  <div
+    class="todo-list-container"
+  >
+    
+    <todo-todo-item
+      ng-reflect-todo="[object Object]"
+    >
+      <div
+        class="todo"
+      >
+        <mat-checkbox
+          class="todo-done mat-checkbox mat-accent"
+          id="mat-checkbox-1"
+          ng-reflect-checked="false"
+        >
+          <label
+            class="mat-checkbox-layout"
+            for="mat-checkbox-1-input"
+          >
+            <div
+              class="mat-checkbox-inner-container mat-checkbox-inner-container-no-side-margin"
+            >
+              <input
+                aria-checked="false"
+                class="mat-checkbox-input cdk-visually-hidden"
+                id="mat-checkbox-1-input"
+                tabindex="0"
+                type="checkbox"
+              />
+              <div
+                class="mat-checkbox-ripple mat-ripple"
+                matripple=""
+                ng-reflect-animation="[object Object]"
+                ng-reflect-centered="true"
+                ng-reflect-disabled="false"
+                ng-reflect-radius="20"
+                ng-reflect-trigger="[object HTMLLabelElement]"
+              >
+                <div
+                  class="mat-ripple-element mat-checkbox-persistent-ripple"
+                />
+              </div>
+              <div
+                class="mat-checkbox-frame"
+              />
+              <div
+                class="mat-checkbox-background"
+              >
+                <svg
+                  class="mat-checkbox-checkmark"
+                  focusable="false"
+                  version="1.1"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                >
+                  <path
+                    class="mat-checkbox-checkmark-path"
+                    d="M4.1,12.7 9,17.6 20.3,6.3"
+                    fill="none"
+                    stroke="white"
+                  />
+                </svg>
+                <div
+                  class="mat-checkbox-mixedmark"
+                />
+              </div>
+            </div>
+            <span
+              class="mat-checkbox-label"
+            >
+              <span
+                style="display:none"
+              >
+                 
+              </span>
+            </span>
+          </label>
+        </mat-checkbox>
+        <span
+          class="todo-label"
+          ng-reflect-klass="todo-label"
+          ng-reflect-ng-class="[object Object]"
+        >
+           Shortlist features for MVP 
+        </span>
+        <button
+          aria-label="Delete"
+          mat-icon-button=""
+        >
+          <mat-icon
+            aria-hidden="true"
+            class="mat-icon notranslate material-icons mat-icon-no-color"
+            role="img"
+          >
+            delete
+          </mat-icon>
+        </button>
+      </div>
+    </todo-todo-item>
+    <todo-todo-item
+      ng-reflect-todo="[object Object]"
+    >
+      <div
+        class="todo"
+      >
+        <mat-checkbox
+          class="todo-done mat-checkbox mat-accent"
+          id="mat-checkbox-2"
+          ng-reflect-checked="false"
+        >
+          <label
+            class="mat-checkbox-layout"
+            for="mat-checkbox-2-input"
+          >
+            <div
+              class="mat-checkbox-inner-container mat-checkbox-inner-container-no-side-margin"
+            >
+              <input
+                aria-checked="false"
+                class="mat-checkbox-input cdk-visually-hidden"
+                id="mat-checkbox-2-input"
+                tabindex="0"
+                type="checkbox"
+              />
+              <div
+                class="mat-checkbox-ripple mat-ripple"
+                matripple=""
+                ng-reflect-animation="[object Object]"
+                ng-reflect-centered="true"
+                ng-reflect-disabled="false"
+                ng-reflect-radius="20"
+                ng-reflect-trigger="[object HTMLLabelElement]"
+              >
+                <div
+                  class="mat-ripple-element mat-checkbox-persistent-ripple"
+                />
+              </div>
+              <div
+                class="mat-checkbox-frame"
+              />
+              <div
+                class="mat-checkbox-background"
+              >
+                <svg
+                  class="mat-checkbox-checkmark"
+                  focusable="false"
+                  version="1.1"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                >
+                  <path
+                    class="mat-checkbox-checkmark-path"
+                    d="M4.1,12.7 9,17.6 20.3,6.3"
+                    fill="none"
+                    stroke="white"
+                  />
+                </svg>
+                <div
+                  class="mat-checkbox-mixedmark"
+                />
+              </div>
+            </div>
+            <span
+              class="mat-checkbox-label"
+            >
+              <span
+                style="display:none"
+              >
+                 
+              </span>
+            </span>
+          </label>
+        </mat-checkbox>
+        <span
+          class="todo-label"
+          ng-reflect-klass="todo-label"
+          ng-reflect-ng-class="[object Object]"
+        >
+           Launch PPC campaign with new creative 
+        </span>
+        <button
+          aria-label="Delete"
+          mat-icon-button=""
+        >
+          <mat-icon
+            aria-hidden="true"
+            class="mat-icon notranslate material-icons mat-icon-no-color"
+            role="img"
+          >
+            delete
+          </mat-icon>
+        </button>
+      </div>
+    </todo-todo-item>
+    <todo-todo-item
+      ng-reflect-todo="[object Object]"
+    >
+      <div
+        class="todo"
+      >
+        <mat-checkbox
+          class="todo-done mat-checkbox mat-accent"
+          id="mat-checkbox-3"
+          ng-reflect-checked="false"
+        >
+          <label
+            class="mat-checkbox-layout"
+            for="mat-checkbox-3-input"
+          >
+            <div
+              class="mat-checkbox-inner-container mat-checkbox-inner-container-no-side-margin"
+            >
+              <input
+                aria-checked="false"
+                class="mat-checkbox-input cdk-visually-hidden"
+                id="mat-checkbox-3-input"
+                tabindex="0"
+                type="checkbox"
+              />
+              <div
+                class="mat-checkbox-ripple mat-ripple"
+                matripple=""
+                ng-reflect-animation="[object Object]"
+                ng-reflect-centered="true"
+                ng-reflect-disabled="false"
+                ng-reflect-radius="20"
+                ng-reflect-trigger="[object HTMLLabelElement]"
+              >
+                <div
+                  class="mat-ripple-element mat-checkbox-persistent-ripple"
+                />
+              </div>
+              <div
+                class="mat-checkbox-frame"
+              />
+              <div
+                class="mat-checkbox-background"
+              >
+                <svg
+                  class="mat-checkbox-checkmark"
+                  focusable="false"
+                  version="1.1"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                >
+                  <path
+                    class="mat-checkbox-checkmark-path"
+                    d="M4.1,12.7 9,17.6 20.3,6.3"
+                    fill="none"
+                    stroke="white"
+                  />
+                </svg>
+                <div
+                  class="mat-checkbox-mixedmark"
+                />
+              </div>
+            </div>
+            <span
+              class="mat-checkbox-label"
+            >
+              <span
+                style="display:none"
+              >
+                 
+              </span>
+            </span>
+          </label>
+        </mat-checkbox>
+        <span
+          class="todo-label"
+          ng-reflect-klass="todo-label"
+          ng-reflect-ng-class="[object Object]"
+        >
+           Define audience breakdown with new data 
+        </span>
+        <button
+          aria-label="Delete"
+          mat-icon-button=""
+        >
+          <mat-icon
+            aria-hidden="true"
+            class="mat-icon notranslate material-icons mat-icon-no-color"
+            role="img"
+          >
+            delete
+          </mat-icon>
+        </button>
+      </div>
+    </todo-todo-item>
+    <todo-todo-item
+      ng-reflect-todo="[object Object]"
+    >
+      <div
+        class="todo"
+      >
+        <mat-checkbox
+          class="todo-done mat-checkbox mat-accent mat-checkbox-checked"
+          id="mat-checkbox-4"
+          ng-reflect-checked="true"
+        >
+          <label
+            class="mat-checkbox-layout"
+            for="mat-checkbox-4-input"
+          >
+            <div
+              class="mat-checkbox-inner-container mat-checkbox-inner-container-no-side-margin"
+            >
+              <input
+                aria-checked="true"
+                class="mat-checkbox-input cdk-visually-hidden"
+                id="mat-checkbox-4-input"
+                tabindex="0"
+                type="checkbox"
+              />
+              <div
+                class="mat-checkbox-ripple mat-ripple"
+                matripple=""
+                ng-reflect-animation="[object Object]"
+                ng-reflect-centered="true"
+                ng-reflect-disabled="false"
+                ng-reflect-radius="20"
+                ng-reflect-trigger="[object HTMLLabelElement]"
+              >
+                <div
+                  class="mat-ripple-element mat-checkbox-persistent-ripple"
+                />
+              </div>
+              <div
+                class="mat-checkbox-frame"
+              />
+              <div
+                class="mat-checkbox-background"
+              >
+                <svg
+                  class="mat-checkbox-checkmark"
+                  focusable="false"
+                  version="1.1"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                >
+                  <path
+                    class="mat-checkbox-checkmark-path"
+                    d="M4.1,12.7 9,17.6 20.3,6.3"
+                    fill="none"
+                    stroke="white"
+                  />
+                </svg>
+                <div
+                  class="mat-checkbox-mixedmark"
+                />
+              </div>
+            </div>
+            <span
+              class="mat-checkbox-label"
+            >
+              <span
+                style="display:none"
+              >
+                 
+              </span>
+            </span>
+          </label>
+        </mat-checkbox>
+        <span
+          class="todo-label todo-label-done"
+          ng-reflect-klass="todo-label"
+          ng-reflect-ng-class="[object Object]"
+        >
+           Launch demo page for SEO analysis 
+        </span>
+        <button
+          aria-label="Delete"
+          mat-icon-button=""
+        >
+          <mat-icon
+            aria-hidden="true"
+            class="mat-icon notranslate material-icons mat-icon-no-color"
+            role="img"
+          >
+            delete
+          </mat-icon>
+        </button>
+      </div>
+    </todo-todo-item>
+  </div><div
+    class="footer"
+  >
+    <button
+      aria-label="Add a to-do"
+      mat-icon-button=""
+    >
+      <mat-icon
+        aria-hidden="true"
+        class="mat-icon notranslate material-icons mat-icon-no-color"
+        role="img"
+      >
+        add_circle
+      </mat-icon>
+    </button>
+     Add a to-do
+  
+  </div>
+</todo-todo-list>
+`;
