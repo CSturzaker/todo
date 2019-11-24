@@ -1,24 +1,29 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing'
+import { ComponentFixture, TestBed } from '@angular/core/testing'
 
 import { TodoItemComponent } from './todo-item.component'
+import { MatCheckboxModule, MatIconModule } from '@angular/material'
 
 describe('TodoItemComponent', () => {
   let component: TodoItemComponent
   let fixture: ComponentFixture<TodoItemComponent>
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [TodoItemComponent],
-    }).compileComponents()
-  }))
-
   beforeEach(() => {
+    TestBed.configureTestingModule({
+      imports: [MatCheckboxModule, MatIconModule],
+      declarations: [TodoItemComponent],
+    })
     fixture = TestBed.createComponent(TodoItemComponent)
     component = fixture.componentInstance
-    fixture.detectChanges()
   })
 
   it('should create', () => {
+    component.todo = {
+      id: '',
+      name: '',
+      done: false,
+    }
+    fixture.detectChanges()
+
     expect(component).toBeTruthy()
   })
 })
